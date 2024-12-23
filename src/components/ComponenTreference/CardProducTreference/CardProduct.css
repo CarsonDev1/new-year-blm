@@ -1,0 +1,138 @@
+.CardProduct_BodyReference {
+  /* border-color: #f47700; */
+  /* width: 20%; */
+  /* border: 4px solid #f47700; */
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.product__price__percent_BodyReference {
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  color: #ff4530;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  line-height: 1;
+border: 2px solid #ff4530;
+  margin: auto;
+  z-index: 100;
+  justify-content: center;
+  display: flex;
+  border-radius: 5px;
+}
+.product__price--percent-detail_BodyReference {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.product__discount_BodyReference {
+  text-decoration: none;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background: #ff4530;
+  padding: 7px 5px 7px 25px;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  line-height: 1;
+}
+.sticker-combo-requare_BodyReference {
+  position: absolute;
+  background-image: url(https://bachlongmobile.com/bnews/wp-content/uploads/2022/10/STICKER-DISCOUNT-2022-1.png);
+  width: 50px;
+  height: 50px;
+  top: -10px;
+  left: 60%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.product__title_BodyReference {
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  line-height: 1.2;
+  padding: 10px 4px;
+  height: 45px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.product__groupPrice_BodyReference {
+  position: relative;
+  /* display: flex; */
+  justify-content: space-between;
+  padding: 10px 5px;
+  /* background: #f47700 !important; */
+  line-height: 1;
+  border-radius: 0px 0px 8px 8px;
+}
+.product__price_BodyReference {
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+}
+
+.product__priceSpecial_BodyReference {
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+}
+.product__priceRegular_BodyReference {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: line-through;
+}
+.product__price_gach_BodyReference {
+  text-decoration: line-through;
+  font-size: 14px;
+  color: #000;
+}
+
+@media (max-width: 767px) {
+  .product__price_BodyReference-text{
+    display: none;
+  }
+  .product__price__percent_BodyReference {
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .sticker-combo-requare_BodyReference {
+    left: 55%;
+  }
+  .product__priceSpecial_BodyReference {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .product__img-detail_BodyReference {
+  max-width: 150px;
+  height: 150px;
+}
+.product__title_BodyReference{
+ font-size: 14px;
+ font-weight: 600;
+  margin-bottom: unset;
+  overflow: unset;
+  text-overflow: unset;
+}
+.product__groupPrice_BodyReference{padding: 5px;}
+.product__price_BodyReference{
+  font-size: 12px;
+}
+.product__priceSpecial_BodyReference{
+  font-size: 12px;
+}
+}

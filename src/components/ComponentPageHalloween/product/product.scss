@@ -1,0 +1,87 @@
+.product-list-halloween {
+	padding: 0 !important;
+	.bg-01 {
+		background: #f16603;
+	}
+	.upgrade-list {
+		padding: 1.2rem !important;
+		border-radius: 0.8rem !important;
+		.women-decor {
+			width: 80% !important;
+			@media screen and (max-width: 850px) {
+				width: 100% !important;
+			}
+		}
+		.tabs-grid {
+			padding: 1.2rem 0;
+			font-size: 1rem;
+			width: 100%;
+			flex-wrap: wrap;
+			display: flex;
+			gap: 1.2rem;
+			justify-content: center;
+			align-items: stretch;
+			line-height: 1.4;
+			position: relative !important;
+			z-index: 1 !important;
+
+			button.tab {
+				margin: 0 !important;
+				padding: 1rem 0.2rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-height: 50px;
+				height: 100%;
+				transition: all 0.5s ease-in-out;
+				text-align: center;
+				background-color: #fff;
+				color: #333;
+
+				&:hover {
+					background-color: #f8f412 !important;
+					// color: #fff !important;
+					border-color: #ff4d4f !important;
+					box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+				}
+
+				@media screen and (max-width: 768px) {
+					padding: 0.6rem 0.2rem;
+					font-size: 0.9rem;
+				}
+				@media screen and (max-width: 480px) {
+					padding: 0.5rem 0.1rem;
+					font-size: 0.8rem;
+				}
+			}
+		}
+
+		.upgrade {
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+			gap: 1.2rem;
+
+			@media screen and (max-width: 1200px) {
+				grid-template-columns: repeat(4, 1fr);
+			}
+
+			@media screen and (max-width: 850px) {
+				grid-template-columns: repeat(3, 1fr);
+			}
+
+			@media screen and (max-width: 768px) {
+				grid-template-columns: repeat(2, 1fr);
+			}
+
+			&-item {
+				display: flex;
+				flex-direction: column;
+				flex-grow: 1;
+				min-height: 100%;
+				box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+				border-radius: 0.8rem;
+				padding: 1.2rem;
+			}
+		}
+	}
+}

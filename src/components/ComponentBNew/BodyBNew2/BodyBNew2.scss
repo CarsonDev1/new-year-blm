@@ -1,0 +1,130 @@
+.header-BodyBNew2 {
+  background-color: #fffde6;
+
+  .header-BodyBNew2-title {
+    color: black;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 20px 0px;
+
+    @media (max-width: 767px) {
+      font-size: 22px;
+      padding: 10px 0px;
+    }
+  }
+
+  .header-BodyBNew2-img {
+    height: 100%;
+    width: 100%;
+    min-width: 350px;
+    max-width: 350px;
+    border-radius: 20px;
+    object-fit: cover;
+
+    @media (max-width: 1240px) {
+      min-width: 50vw;
+      max-width: 50vw;
+      height: 100%;
+    }
+  }
+
+  .header-BodyBNew2-cardPostView-tabInfo {
+    display: flex;
+    gap: 5px;
+    font-size: 14px;
+    color: #000;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  .header-BodyBNew2-titleSub {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-height: 1.5;
+    /* Limit to 2 lines */
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    @media (max-width: 767px) {
+      font-size: 16px;
+      font-weight: 600;
+      -webkit-line-clamp: 3;
+      line-height: 1.2;
+    }
+  }
+
+  .header-BodyBNew2-cardPostView-view {
+    padding: 10px 0px;
+    font-size: 14px;
+    color: #000;
+  }
+
+  .header-BodyBNew2-cardPostView-load-more-button {
+    border: 2px solid red; // Viền đỏ
+    background-color: transparent; // Nền trong suốt
+    color: red; // Màu chữ đỏ
+    padding: 10px 20px; // Khoảng cách bên trong
+    cursor: pointer; // Con trỏ chuột khi hover
+    transition: background-color 0.3s, color 0.3s; // Hiệu ứng chuyển tiếp
+    border-radius: 10px;
+    margin: 10px auto;
+    justify-content: center;
+    display: flex;
+
+    &:hover {
+      background-color: red; // Màu nền khi hover
+      color: white; // Màu chữ khi hover
+    }
+  }
+
+  .header-BodyBNew2-imgProduct {
+    width: 200px;
+    min-width: 200px;
+    max-width: 200px;
+    height: 100px;
+    border-radius: 5px;
+    object-fit: fill;
+
+    @media (max-width: 1240px) {
+      min-width: 50vw;
+      max-width: 50vw;
+      height: 100%;
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+
+  .header-BodyBNew2-titleSubProduct {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: 1.5;
+    /* Limit to 2 lines */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .header-BodyBNew2-cardRow {
+    display: flex;
+
+    @media (max-width: 1240px) {
+      display: block !important;
+    }
+  }
+
+  .header-BodyBNew2-CardCol {
+    @media (max-width: 1240px) {
+      margin: 0 auto;
+      max-width: unset !important;
+    }
+  }
+}

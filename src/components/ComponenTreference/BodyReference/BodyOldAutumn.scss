@@ -1,0 +1,95 @@
+.BodyOldAutumn-title {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  padding: 20px 0;
+}
+.BodyReference-card {
+  margin: 0 auto;
+  padding: 10px;
+  background: linear-gradient(
+    180deg,
+    #6ebeff 0,
+    var(--bg-gradient-white, #fff) 90%
+  );
+  border-radius: 15px;
+}
+.searchBar {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff; /* Background color from the image */
+  border-radius: 25px;
+  padding: 6px 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
+}
+
+.searchInput {
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 16px;
+  color: #333;
+}
+
+.searchInput::placeholder {
+  color: #aaa;
+}
+
+.searchButton {
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.searchButton img {
+  width: 20px;
+  height: 20px;
+}
+.BodyOldAutumn-tab-button {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px 0;
+  flex-wrap: wrap;
+  @media (max-width: 767px) {
+    gap: 10px;
+  }
+}
+.BodyOldAutumn-button {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  width: max-content;
+  height: max-content;
+  font-weight: 600;
+  color: #000;
+  white-space: nowrap;
+}
+.BodyOldAutumn-button.active {
+  background-color: red; // Màu đỏ cho nút đang hoạt động
+  color: white; // Màu chữ trắng
+}
+.BodyOldAutumn-tab-item {
+  display: grid;
+  gap: 10px;
+  margin: 0 auto;
+  grid-template-columns: repeat(5, 1fr);
+  @media (max-width: 1199px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @media (max-width: 1000px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+// TradeInModal.scss

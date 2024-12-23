@@ -1,0 +1,307 @@
+.page-sale-thang-12 {
+  position: relative;
+  .HeaderCombo-bannerPC {
+    display: block;
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+  .HeaderCombo-bannerMB {
+    display: none;
+    @media (max-width: 767px) {
+      display: block;
+    }
+  }
+
+  .banner-HeaderHalloween-mobile {
+    display: none;
+    @media (max-width: 767px) {
+      display: block;
+    }
+  }
+  .banner-HeaderHalloween {
+    display: block;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #0099cc;
+    border: none;
+  }
+
+  .frame-pumpkin {
+    // position: relative;
+    // top: 0;
+    // left: 0;
+    // width: 100%;
+    // height: 20rem;
+    // img {
+    // 	object-fit: contain;
+    // }
+  }
+
+  .banner-HeaderHalloween.shine-banner {
+    background-repeat: no-repeat;
+    background-position: -120px -120px, 0 0;
+
+    background-image: -webkit-linear-gradient(
+      top left,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 37%,
+      rgba(255, 255, 255, 0.8) 45%,
+      rgba(255, 255, 255, 0) 50%
+    );
+    background-image: -moz-linear-gradient(
+      0 0,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 37%,
+      rgba(255, 255, 255, 0.8) 45%,
+      rgba(255, 255, 255, 0) 50%
+    );
+    background-image: -o-linear-gradient(
+      0 0,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 37%,
+      rgba(255, 255, 255, 0.8) 45%,
+      rgba(255, 255, 255, 0) 50%
+    );
+    background-image: linear-gradient(
+      0 0,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 37%,
+      rgba(255, 255, 255, 0.8) 45%,
+      rgba(255, 255, 255, 0) 50%
+    );
+
+    -moz-background-size: 250% 250%, 100% 100%;
+    background-size: 250% 250%, 100% 100%;
+
+    -webkit-transition: background-position 0s ease;
+    -moz-transition: background-position 0s ease;
+    -o-transition: background-position 0s ease;
+    transition: background-position 0s ease;
+  }
+
+  .banner-HeaderHalloween.shine-banner:hover {
+    background-position: 0 0, 0 0;
+
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .HeaderHalloween-time-line-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+
+    @media screen and (max-width: 1200px) {
+      padding: 2.4rem 0;
+    }
+    .Halloween-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px auto;
+      background-color: #f68f3e;
+      color: white;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .Halloween-button:hover {
+      background-color: #f68f3e;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      transform: scale(1.05);
+    }
+
+    .Halloween-button:before {
+      content: "";
+      position: absolute;
+      left: -30px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+    }
+
+    .Halloween-button:after {
+      content: "";
+      position: absolute;
+      right: -30px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+    }
+
+    .Halloween-button:active {
+      background-color: #c24500;
+      transform: scale(0.98);
+    }
+  }
+
+  .HeaderHalloween-time-line-card {
+    width: 15rem;
+    height: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../../../public/sale-12/viber_image_2024-11-27_13-16-38-251.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 10;
+
+    @media screen and (max-width: 1200px) {
+      width: 15rem;
+      height: 9rem;
+    }
+    @media screen and (max-width: 768px) {
+      width: 12rem;
+      height: 7rem;
+    }
+    @media screen and (max-width: 576px) {
+      width: 8rem;
+      height: 5rem;
+    }
+  }
+
+  .HeaderHalloween-time-line-card-container {
+    margin-bottom: 2.4rem;
+  }
+
+  .content-card {
+    padding: 10px;
+    display: block;
+    margin-bottom: 0px;
+    margin-left: 0px;
+
+    @media screen and (max-width: 576px) {
+      margin-left: 0;
+    }
+  }
+
+  .HeaderHalloween-time-line-count {
+    font-size: 3rem; // text-6xl
+    font-weight: bold;
+    color: #ffff; // amber-100
+    text-align: center;
+    @media screen and (max-width: 1200px) {
+      font-size: 2rem;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 1.6rem;
+    }
+    @media screen and (max-width: 576px) {
+      margin-top: 2rem;
+    }
+  }
+  .HeaderHalloween-time-line-card-key {
+    display: flex;
+    gap: 10px;
+
+    @media (max-width: 768px) {
+      gap: 5px;
+    }
+  }
+  .HeaderHalloween-time-line-subtext,
+  .HeaderHalloween-time-line-subtext-small {
+    margin-top: 0.5rem; // mt-2
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px; // text-xs
+    color: #fde68a; // amber-200
+    @media screen and (max-width: 1200px) {
+      font-size: 1.4rem;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 1.2rem;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 1rem;
+    }
+  }
+
+  .HeaderHalloween-time-line-buttons {
+    margin-top: 2rem; // mt-8
+    display: flex;
+    gap: 1rem; // space-x-4
+  }
+
+  .HeaderHalloween-time-line-btn {
+    background-color: #fde68a; // bg-amber-200
+    color: #78350f; // text-amber-900
+    border-color: #78350f; // Matches the amber-900 border
+    &:hover {
+      background-color: #fcd34d; // hover:bg-amber-300
+    }
+  }
+  .HeaderHalloween-promotion-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.4rem;
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: repeat(4, 1fr);
+      width: 100%;
+      gap: 1.2rem;
+      margin-bottom: 0;
+    }
+  }
+  .HeaderHalloween-promotion-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    width: 100%;
+  }
+  .HeaderHalloween-promotion-header {
+    text-align: center;
+    font-size: 3.2rem;
+    color: red;
+    text-transform: uppercase;
+    font-weight: 600;
+    @media screen and (max-width: 1200px) {
+      font-size: 2rem;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 1.5rem;
+    }
+  }
+  .HeaderHalloween-promotion-list-privilege {
+    display: flex;
+    padding: 1.2rem 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    z-index: 1;
+
+    @media screen and (max-width: 1200px) {
+      gap: 0rem;
+      grid-template-columns: repeat(3, 1fr);
+      display: grid;
+    }
+    img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      object-fit: contain;
+      width: 100%;
+    }
+  }
+}

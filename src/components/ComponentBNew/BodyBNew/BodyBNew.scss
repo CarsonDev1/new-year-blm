@@ -1,0 +1,361 @@
+.header-BodyBNew-CardRow {
+  display: flex;
+
+  @media (max-width: 1240px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.header-BodyBNew-CardCol {
+  @media (max-width: 1240px) {
+    margin: 0 auto;
+    max-width: unset !important;
+  }
+}
+.header-BodyBNew-CardCol2 {
+  @media (max-width: 1240px) {
+    margin: 0 auto;
+    max-width: unset !important;
+    order: 2;
+  }
+}
+.header-BodyBNew {
+  background-color: #fffde6;
+
+  .BodyBNew-tab-list {
+    list-style-type: none;
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-bottom: 1px solid gray;
+    border-top: 2px solid rgb(0, 0, 0);
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    @media (max-width: 1240px) {
+      display: flex;
+      justify-content: unset !important;
+    }
+
+    @media (max-width: 767px) {
+      gap: 10px;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .BodyBNew-tab-list-img {
+    height: 40px;
+    margin: 10px 110px;
+    width: 200px;
+    cursor: pointer;
+    object-fit: cover;
+    @media (max-width: 1300px) {
+      display: none;
+    }
+  }
+  .BodyBNew-tab-item {
+    padding: 15px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 700;
+    border-top: 2px solid transparent;
+    border-bottom: 4px solid transparent;
+    transition: all 0.5s ease;
+    white-space: nowrap;
+
+    &:hover {
+      background-color: #e7e7e7;
+    }
+
+    &.active {
+      color: #007bff;
+      border-bottom: 4px solid #007bff;
+    }
+  }
+
+  &-titleNew {
+    color: #000;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 20px 0 10px 0;
+  }
+
+  &-news-first-image {
+    display: block;
+    position: relative;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: initial;
+
+    @media (max-width: 767px) {
+      height: 100%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.header-BodyBNew-news-tabAuthor {
+  display: block;
+
+  @media (max-width: 767px) {
+    display: none !important;
+  }
+}
+
+.header-BodyBNew-news-first-content {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.header-BodyBNew-news-first-tag {
+  align-items: center;
+  background: hsla(0, 0%, 100%, 0.4);
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: center;
+  padding: 0.4rem 0.8rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.header-BodyBNew-news-first-title {
+  line-height: 130%;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  /* Limit to 2 lines */
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @media (max-width: 767px) {
+    font-size: 20px;
+  }
+}
+.header-BodyBNew-news-first-box {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.header-BodyBNew-card-a {
+  position: relative;
+  -webkit-line-clamp: 2;
+  color: #fff;
+  overflow: hidden;
+  width: 600px;
+  height: 400px;
+  display: block;
+}
+
+.header-BodyBNew-line-clamp-2 {
+  color: #fff !important;
+}
+
+.header-BodyBNew-news-first-created {
+  margin-top: 1.2rem;
+  display: flex;
+  gap: 6px;
+  color: #000000;
+}
+
+.header-BodyBNew-author {
+  align-items: center;
+  display: flex;
+  gap: 0.2rem;
+  position: relative;
+}
+
+.header-BodyBNew-icUser {
+  width: 14px;
+  height: 14px;
+}
+
+.header-BodyBNew-news-box {
+  display: block;
+  margin: 10px 0px 10px 10px;
+
+  @media (max-width: 1240px) {
+    margin: 10px 0px 00px 0px;
+  }
+
+  .header-BodyBNew-news-first-created2 {
+    color: #000;
+    display: flex;
+    padding: 6px 0px;
+    gap: 6px;
+
+    @media (max-width: 767px) {
+      display: none !important;
+    }
+  }
+}
+
+.header-BodyBNew-news-content {
+  margin-left: 10px;
+}
+
+.header-BodyBNew-news-image img {
+  height: 175px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  @media (max-width: 1240px) {
+    min-width: 50vw;
+    max-width: 50vw;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+  @media (max-width: 767px) {
+    min-width: unset;
+    max-width: unset;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.header-BodyBNew-line {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  /* Limit to 2 lines */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header-BodyBNew-news-tag {
+  font-size: 12px;
+  color: #007bff;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+.header-BodyBNew-cardPostView {
+  width: 20vw;
+  padding: 0px 0px 20px 0px;
+  @media (max-width: 1200px) {
+    width: 30vw;
+  }
+  @media (max-width: 767px) {
+    width: 45vw;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.header-BodyBNew-newHot {
+  display: block;
+
+  @media (max-width: 1240px) {
+    display: none;
+  }
+}
+
+.header-BodyBNew-cardPostView-img {
+  border-radius: 10px;
+  height: 200px;
+  min-height: 200px;
+  width: 20vw;
+  @media (max-width: 1200px) {
+    width: 30vw;
+  }
+  @media (max-width: 767px) {
+    width: 45vw;
+  }
+}
+
+.header-BodyBNew-cardPostView-title {
+  padding: 6px 0px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 1.6;
+  /* Limit to 2 lines */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 60px;
+  @media (max-width: 767px) {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1;
+    -webkit-line-clamp: 3;
+    height: 50px;
+  }
+}
+
+.header-BodyBNew-cardPostView-tabInfo {
+  display: flex;
+  gap: 5px;
+  font-size: 14px;
+  color: #000;
+}
+
+.news-title a {
+  color: #000;
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 1.2;
+  /* Limit to 2 lines */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.loading-containerBnew {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.header-BodyBNew-card-a2 {
+  color: #000000;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  &:hover {
+    color: #000000;
+  }
+}
+.header-BodyBNew-CardRow-col-6 {
+  flex: 0 0 25%;
+}
+.header-BodyBNew-CardCol {
+  flex: 0 0 45%;
+}
+.header-BodyBNew-CardCol1 {
+  flex: 0 0 30%;
+}
+@media (max-width: 1200px) {
+  .header-BodyBNew-CardCol {
+    order: 1; // Đặt các cột này ở đầu
+  }
+  .header-BodyBNew-CardRow-col-6 {
+    order: 3;
+  }
+}

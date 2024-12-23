@@ -1,0 +1,52 @@
+html {
+  font-size: 62.5%;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: 127rem;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  position: relative;
+}

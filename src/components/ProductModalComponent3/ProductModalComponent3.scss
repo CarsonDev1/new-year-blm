@@ -1,0 +1,94 @@
+.productModal3-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.productModal3-leftColumn {
+	width: 40%;
+	margin-right: 20px;
+}
+
+.productModal3-card {
+	border: 1px solid #ddd;
+	padding: 10px;
+}
+
+.productModal3-imageContainer {
+	text-align: center;
+}
+
+.productModal3-image {
+	margin-bottom: 10px;
+	width: 250px;
+	height: 250px;
+}
+
+.productModal3-priceInfo {
+	display: flex;
+	margin-bottom: 10px;
+	justify-content: space-between;
+}
+
+.productModal3-sellingStatus {
+	background-color: red;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.productModal3-oldPrice {
+	background-color: blue;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.productModal3-additionalPayment {
+	background-color: yellow;
+	color: black;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.productModal3-statusInput {
+	background: blue;
+	color: white;
+}
+
+.productModal3-note {
+	background-color: #fffbe6;
+	padding: 10px;
+	border-radius: 4px;
+}
+
+.productModal3-rightColumn {
+	width: 60%;
+}
+
+@media (max-width: 800px) {
+	.productModal3-container {
+		display: block;
+	}
+	.productModal3-rightColumn {
+		width: 100%;
+	}
+	.productModal3-leftColumn {
+		width: 100%;
+		margin-right: 0px;
+	}
+	.productModal3-image {
+		margin-bottom: 10px;
+		width: 300px;
+		height: 300px;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 767px) {
+	.productModal3-image {
+		margin-bottom: 10px;
+		width: 250px;
+		height: 250px;
+		margin: 0 auto;
+	}
+}

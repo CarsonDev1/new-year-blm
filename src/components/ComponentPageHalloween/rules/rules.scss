@@ -1,0 +1,133 @@
+.rules {
+	padding: 40px 0;
+	background: #fff4e6;
+	font-family: 'Roboto', sans-serif;
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+
+	.rules-header {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		gap: 0.8rem;
+		margin-bottom: 2.4rem;
+		.rules-title {
+			font-size: 36px;
+			font-weight: 700;
+			color: #333; /* Màu chữ tối đơn giản */
+		}
+
+		.rules-description {
+			font-size: 18px;
+			color: #555; /* Màu xám dịu */
+			margin-top: 10px;
+		}
+	}
+
+	.rules-section-title-hot {
+		font-size: 16px;
+		font-weight: 600;
+		color: #e74c3c;
+		margin-bottom: 1.2rem;
+	}
+	.rules-section-title {
+		font-size: 24px;
+		font-weight: 600;
+		color: #e74c3c;
+		margin-bottom: 1.2rem;
+	}
+	.rules-section-title-cus {
+		font-size: 18px;
+		font-weight: 600;
+		color: #e74c3c;
+		margin-bottom: 1.2rem;
+	}
+	.text-italic {
+		font-style: italic;
+	}
+	.rules-content {
+		.rules-list {
+			list-style-type: none;
+			padding: 0;
+			margin: 0 0 30px;
+			.li-cus {
+				font-size: 18px;
+				line-height: 1.8;
+				color: #333; /* Màu chữ chính */
+				margin-bottom: 15px;
+				padding-left: 20px; /* Tạo khoảng cách cho danh sách */
+				position: relative;
+				list-style: none;
+
+				&::before {
+					content: '';
+					width: 8px;
+					height: 8px;
+					background-color: #22e078;
+					border-radius: 50%;
+					position: absolute;
+					left: 0;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+			}
+			.li-cus-02 {
+				font-size: 18px;
+				line-height: 1.8;
+				color: #333; /* Màu chữ chính */
+				margin-bottom: 15px;
+				padding-left: 20px; /* Tạo khoảng cách cho danh sách */
+				position: relative;
+				list-style: none;
+
+				&::before {
+					content: '';
+					width: 8px;
+					height: 8px;
+					background-color: #37413b;
+					border-radius: 50%;
+					position: absolute;
+					left: 0;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+			}
+			li {
+				font-size: 18px;
+				line-height: 1.8;
+				color: #333; /* Màu chữ chính */
+				margin-bottom: 15px;
+				padding-left: 20px; /* Tạo khoảng cách cho danh sách */
+				position: relative;
+				list-style: none;
+
+				&::before {
+					content: ''; /* Tạo chấm tròn trước mỗi mục */
+					width: 8px;
+					height: 8px;
+					background-color: #e74c3c; /* Màu nổi cho điểm */
+					border-radius: 50%;
+					position: absolute;
+					left: 0;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+			}
+
+			.rules-sublist {
+				list-style-type: disc;
+				margin-left: 30px;
+				font-size: 16px;
+				color: #666; /* Màu xám nhạt hơn cho sublist */
+
+				li {
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}

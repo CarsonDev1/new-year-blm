@@ -1,0 +1,46 @@
+.fireworks-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 300;
+}
+
+.fireworks {
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	background: url('https://imgservices-1252317822.image.myqcloud.com/image/081320210201435/e9951400.png') right top
+		no-repeat;
+	background-size: auto 150px;
+	animation: fireworks 2s steps(24) infinite, random 8s steps(1) infinite;
+
+	@media screen and (prefers-reduced-motion) {
+		animation: none;
+	}
+}
+
+@keyframes fireworks {
+	0% {
+		background-position: 0%;
+	}
+	50%,
+	100% {
+		background-position: 100% 100%;
+	}
+}
+
+@keyframes random {
+	0% {
+		transform: translate(0, 0);
+	}
+	25% {
+		transform: translate(200%, 50%) scale(0.8);
+	}
+	50% {
+		transform: translate(80%, 80%) scale(1.2);
+	}
+	75% {
+		transform: translate(20%, 60%) scale(0.65);
+	}
+}

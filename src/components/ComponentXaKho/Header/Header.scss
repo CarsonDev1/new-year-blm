@@ -1,0 +1,68 @@
+.header-warehouse-discharge {
+  padding: 20px 0px;
+  .icon-itemClick {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    @media screen and (max-width: 1200px) {
+      width: 40px;
+      height: 40px;
+    }
+    @media screen and (max-width: 992px) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .item-click-txt {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    height: 40px;
+    white-space: nowrap;
+    @media screen and (max-width: 768px) {
+      font-size: 13px;
+      height: 30px;
+    }
+  }
+  .item-click {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    height: auto;
+    justify-content: center;
+    border-radius: 0.8rem;
+    transition: all 0.3s;
+    @media screen and (max-width: 1200px) {
+      padding: 2.4rem 0.4rem;
+    }
+    @media screen and (max-width: 992px) {
+      padding: 1.8rem 0.2rem;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 0.5rem 0.1rem;
+    }
+  }
+  .item-click:hover {
+    cursor: pointer;
+  }
+  .list-item-click {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0.5rem;
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0.8rem;
+    }
+    @media screen and (max-width: 768px) {
+      gap: 0.6rem;
+      grid-template-columns: repeat(5, 1fr);
+    }
+    @media screen and (max-width: 600px) {
+      gap: 0.3rem;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

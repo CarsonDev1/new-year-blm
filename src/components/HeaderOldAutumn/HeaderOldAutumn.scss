@@ -1,0 +1,12 @@
+.HeaderOldAutumn-bannerPC {
+	display: block;
+	@media (max-width: 767px) {
+		display: none;
+	}
+}
+.HeaderOldAutumn-bannerMB {
+	display: none;
+	@media (max-width: 767px) {
+		display: block;
+	}
+}

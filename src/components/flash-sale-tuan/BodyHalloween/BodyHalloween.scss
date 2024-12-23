@@ -1,0 +1,33 @@
+// .bat-fly {
+//   position: relative;
+//   width: 50px;
+//   height: 50px;
+//   animation: fly 6s linear forwards, delay 10s linear forwards; /* Thêm độ trễ 10 giây sau mỗi lần lặp */
+// }
+// @keyframes fly {
+//   0% {
+//     left: 0;
+//   }
+//   20% {
+//     left: 15%;
+//     transform: translateY(0);
+//   }
+//   45% {
+//     transform: translateY(-70px);
+//   }
+//   65% {
+//     transform: translateY(-150px);
+//   }
+//   100% {
+//     left: 100%;
+//     transform: translateY(-250px);
+//   }
+// }
+// @keyframes delay {
+//   0% {
+//     /* Không làm gì trong 10 giây */
+//   }
+//   100% {
+//     /* Không làm gì trong 10 giây */
+//   }
+// }

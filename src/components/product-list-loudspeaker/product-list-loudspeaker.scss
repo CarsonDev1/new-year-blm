@@ -1,0 +1,246 @@
+.OldForNew-Section-Container-loudspeaker {
+  margin: auto;
+  padding: 10px 10px;
+    background: linear-gradient(180deg,rgb(80, 170, 255) 0%,var(--bg-gradient-white,rgba(255,255,255,1)) 90%);
+    border-radius: 15px;
+}
+.OldForNew-Section-loudspeaker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: #fefce3;
+  padding: 20px 0px;
+}
+.images-pk {
+  width: 100%;
+  height: 100%;
+  margin: 20px auto;
+}
+.title-loai-pk span {
+  background: #0f1630;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 10px 80px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  color: #fff;
+}
+.title-loai-pk {
+  text-align: left;
+  margin: 0px 0px 20px 0px;
+}
+.no-products-image {
+  width: 200px;
+  height: 200px;
+}
+.no-products-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.no-products-message span {
+  font-size: 18px;
+  font-weight: 600;
+}
+.OldForNew-Section5-tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.OldForNew-Section5-tabItem {
+  border: 2px solid #f47700;
+  border-radius: 12px;
+  width: max-content;
+  padding: 2px 10px;
+  display: flex;
+  height: 37px;
+  text-align: center;
+}
+.OldForNew-Section5-tabItemText {
+  border: 2px solid #f47700;
+  border-radius: 12px;
+  width: max-content;
+  padding: 6px 10px;
+  display: flex;
+  height: 37px;
+  text-align: center;
+}
+.OldForNew-Section5-ItemSlider {
+  margin: auto;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 4rem;
+  height: 4rem;
+  background-color: #ef373e;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.swiper-button-prev:before,
+.swiper-button-next:before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.swiper-button-prev:before {
+  border-width: 0.6rem 0.6rem 0.6rem 0;
+  border-color: transparent white transparent transparent;
+}
+
+.swiper-button-next:before {
+  border-width: 0.6rem 0 0.6rem 0.4rem;
+  border-color: transparent transparent transparent white;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.swiper-button-prev {
+  left: 10px;
+  transform: translateY(-50%) translateX(0);
+}
+
+.swiper-button-next {
+  right: 10px;
+  transform: translateY(-50%) translateX(0);
+}
+
+@media (max-width: 1440px) {
+  .OldForNew-Section5-Container {
+    margin: auto;
+  }
+  .OldForNew-Section5-tab {
+    gap: 6px;
+  }
+  .OldForNew-Section5-tabItemText {
+    padding: 6px 12px;
+    font-size: 13px;
+    width: 150px;
+  }
+}
+@media (max-width: 1000px) {
+  .OldForNew-Section5-Container {
+    margin: auto;
+  }
+  .OldForNew-Section5-tab {
+    gap: 6px;
+  }
+  .OldForNew-Section5-ItemSlider {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .OldForNew-Section5-tabItemText {
+    padding: 6px 12px;
+    font-size: 13px;
+    width: 150px;
+  }
+}
+@media (max-width: 767px) {
+  .OldForNew-Section5-ItemSlider {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .OldForNew-Section5-tabItemText {
+    padding: 6px 6px;
+    font-size: 13px;
+    width: 150px;
+  }
+  .title-loai-pk span {
+    font-size: 14px !important;
+  }
+  .OldForNew-Section5-tab {
+    width: 100%;
+    overflow-x: auto;
+    gap: 10px;
+    display: flex;
+    align-items: unset;
+    justify-content: unset;
+    margin: unset;
+  }
+  .OldForNew-Section5-tabItem {
+    margin: unset;
+    min-width: 120px;
+  }
+  .OldForNew-Section5-tabItemText {
+    margin: unset;
+    font-weight: 500;
+    min-width: 110px;
+  }
+}
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.load-more-container {
+  button {
+    background-color: #f47700;
+    color: white;
+    padding: 16px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+  }
+  button:hover {
+    background-color: #ef373e;
+  }
+}
+.btn-tab-buyPhone{
+  background: white;
+  width: max-content;
+  height: max-content;
+  padding: 16px 20px;
+  border-radius: 10px;
+  color: #000;
+  font-weight: 600;
+  @media (max-width: 767px) {
+    margin: auto;
+     padding: 10px 10px;
+  }
+}
+.btn-tab-buyPhone_active{
+  background: red;
+ color: #fff;
+}
+.title-table-combo-pk{
+  color: #000;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 10px 0;
+  @media (max-width: 1000px) {
+    text-align: center;
+  }
+}
+.header-table-combo-pk{
+  justify-content: space-between;
+  display: flex;
+@media (max-width: 1000px) {
+    display: block;
+  }
+}

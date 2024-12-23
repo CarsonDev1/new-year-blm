@@ -1,0 +1,12 @@
+.banner-pc-warehouse-discharge {
+  display: block;
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+.banner-mb-warehouse-discharge {
+  display: none;
+  @media (max-width: 767px) {
+    display: block;
+  }
+}

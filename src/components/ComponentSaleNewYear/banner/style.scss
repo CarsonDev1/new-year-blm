@@ -1,0 +1,803 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Meow+Script&family=Playwrite+CO+Guides&display=swap');
+.page-sale-thang-12 {
+	position: relative;
+
+	.time-wrap {
+		position: relative;
+		padding-top: 24rem;
+
+		@media screen and (max-width: 1024px) {
+			padding-top: 0;
+		}
+
+		.cloud-banner-wrap {
+			position: absolute;
+			width: 100%;
+			height: 24rem;
+			top: 0;
+			left: 0;
+			display: none;
+
+			@media (min-width: 1024px) {
+				display: inline;
+			}
+
+			.gold-banner-right {
+				object-fit: contain;
+				height: 180px;
+
+				@media (min-width: 768px) {
+					height: 200px;
+					bottom: 5rem;
+				}
+
+				@media (min-width: 1024px) {
+					height: 250px;
+					bottom: 7.5rem;
+				}
+
+				z-index: 0;
+				position: absolute;
+				right: 0rem;
+				bottom: 2.5rem;
+				width: fit-content;
+				display: none;
+
+				@media (min-width: 1280px) {
+					display: inline;
+				}
+			}
+			.gold-banner-left {
+				object-fit: contain;
+				height: 180px;
+
+				@media (min-width: 768px) {
+					height: 200px;
+					bottom: 5rem;
+				}
+
+				@media (min-width: 1024px) {
+					height: 250px;
+					bottom: 7.5rem;
+				}
+
+				z-index: 0;
+				position: absolute;
+				left: 0;
+				bottom: 2.5rem;
+				width: fit-content;
+				display: none;
+
+				@media (min-width: 1280px) {
+					display: inline;
+				}
+			}
+
+			.cloud-main {
+				object-fit: contain;
+				width: 100%;
+				height: 300px;
+
+				@media (min-width: 768px) {
+					height: 320px;
+				}
+
+				@media (min-width: 1024px) {
+					height: 360px;
+				}
+
+				position: absolute;
+				bottom: -2rem;
+				left: 0;
+				z-index: 20;
+
+				animation: cloud1 5.5s ease-in-out infinite;
+
+				@keyframes cloud1 {
+					0%,
+					100% {
+						transform: translateY(0);
+					}
+					50% {
+						transform: translateY(-20px);
+					}
+				}
+			}
+			.wrap-timer {
+				position: absolute;
+				width: 100%;
+				height: 20rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				top: -4rem;
+				flex-direction: column;
+			}
+			.button-rules {
+				color: #fff;
+				position: relative;
+				z-index: 20;
+				padding: 1.2rem 1.8rem;
+				border-radius: 0.8rem;
+				background: #d80e13;
+				margin-top: 0.4rem;
+			}
+			.cloud-main-02 {
+				object-fit: contain;
+				width: 100%;
+				height: 300px;
+
+				@media (min-width: 768px) {
+					height: 320px;
+				}
+
+				@media (min-width: 1024px) {
+					height: 360px;
+				}
+
+				position: absolute;
+				top: -10rem;
+				left: -15%;
+				z-index: 0;
+			}
+			.cloud-main-03 {
+				object-fit: contain;
+				width: 100%;
+				height: 300px;
+
+				@media (min-width: 768px) {
+					height: 320px;
+				}
+
+				@media (min-width: 1024px) {
+					height: 360px;
+				}
+
+				position: absolute;
+				top: -10rem;
+				right: -15%;
+				z-index: 0;
+			}
+			.cloud-left {
+				object-fit: contain;
+				width: 100%;
+				height: 300px;
+
+				@media (min-width: 768px) {
+					height: 320px;
+					bottom: -3.5rem;
+				}
+
+				@media (min-width: 1024px) {
+					height: 360px;
+				}
+
+				position: absolute;
+				left: -50%;
+				transform: translateX(-50%);
+				z-index: 0;
+				display: none;
+
+				@media (min-width: 1280px) {
+					display: inline;
+				}
+
+				animation: cloud2 6s ease-in-out infinite;
+
+				@keyframes cloud2 {
+					0%,
+					100% {
+						transform: translateY(0);
+					}
+					50% {
+						transform: translateY(-20px);
+					}
+				}
+			}
+			.cloud-right {
+				object-fit: contain;
+				width: 100%;
+				height: 300px;
+
+				@media (min-width: 768px) {
+					height: 320px;
+					bottom: -2.5rem;
+				}
+
+				@media (min-width: 1024px) {
+					height: 360px;
+				}
+
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				z-index: 0;
+				display: none;
+
+				@media (min-width: 1280px) {
+					display: inline;
+				}
+
+				animation: cloud3 4.5s ease-in-out infinite;
+
+				@keyframes cloud3 {
+					0%,
+					100% {
+						transform: translateY(0);
+					}
+					50% {
+						transform: translateY(-10px);
+					}
+				}
+			}
+		}
+	}
+
+	.timer {
+		width: 50rem;
+		height: 100%;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1.2rem;
+	}
+	.timer-banner {
+		position: relative;
+		width: 100%;
+
+		.time-banner-item {
+			object-fit: contain;
+			width: fit-content;
+			height: 120px;
+
+			@media (min-width: 768px) {
+				height: 140px;
+			}
+
+			@media (min-width: 1024px) {
+				height: 160px;
+			}
+
+			position: relative;
+			z-index: 20;
+
+			// animation: cloud1 4.5s ease-in-out infinite;
+
+			@keyframes cloud1 {
+				0%,
+				100% {
+					transform: translateY(0);
+				}
+				50% {
+					transform: translateY(-10px);
+				}
+			}
+		}
+		.txt-time {
+			position: absolute;
+			top: 55%;
+			left: 50%;
+			transform: translate(-50%, -0%);
+			font-size: 1.4rem;
+			font-weight: 500;
+			color: #fff;
+			line-height: 1;
+			z-index: 30;
+			rotate: -15deg;
+			display: flex;
+			flex-direction: column;
+			gap: 0.2rem;
+			align-items: center;
+			text-align: center;
+
+			font-family: 'Delius Swash Caps', serif;
+			font-weight: 400;
+			font-style: normal;
+		}
+	}
+	.HeaderCombo-bannerPC {
+		display: block;
+		@media (max-width: 767px) {
+			display: none;
+		}
+	}
+	.HeaderCombo-bannerMB {
+		display: none;
+		@media (max-width: 767px) {
+			display: block;
+		}
+	}
+
+	.banner-HeaderHalloween-mobile {
+		display: none;
+		@media (max-width: 767px) {
+			display: block;
+		}
+	}
+	.banner-HeaderHalloween {
+		display: block;
+		position: relative;
+		color: #fff;
+		text-align: center;
+		text-transform: uppercase;
+		background-color: #0099cc;
+		border: none;
+	}
+
+	.frame-pumpkin {
+		// position: relative;
+		// top: 0;
+		// left: 0;
+		// width: 100%;
+		// height: 20rem;
+		// img {
+		// 	object-fit: contain;
+		// }
+	}
+
+	.banner-HeaderHalloween.shine-banner {
+		background-repeat: no-repeat;
+		background-position: -120px -120px, 0 0;
+
+		background-image: -webkit-linear-gradient(
+			top left,
+			rgba(255, 255, 255, 0.2) 0%,
+			rgba(255, 255, 255, 0.2) 37%,
+			rgba(255, 255, 255, 0.8) 45%,
+			rgba(255, 255, 255, 0) 50%
+		);
+		background-image: -moz-linear-gradient(
+			0 0,
+			rgba(255, 255, 255, 0.2) 0%,
+			rgba(255, 255, 255, 0.2) 37%,
+			rgba(255, 255, 255, 0.8) 45%,
+			rgba(255, 255, 255, 0) 50%
+		);
+		background-image: -o-linear-gradient(
+			0 0,
+			rgba(255, 255, 255, 0.2) 0%,
+			rgba(255, 255, 255, 0.2) 37%,
+			rgba(255, 255, 255, 0.8) 45%,
+			rgba(255, 255, 255, 0) 50%
+		);
+		background-image: linear-gradient(
+			0 0,
+			rgba(255, 255, 255, 0.2) 0%,
+			rgba(255, 255, 255, 0.2) 37%,
+			rgba(255, 255, 255, 0.8) 45%,
+			rgba(255, 255, 255, 0) 50%
+		);
+
+		-moz-background-size: 250% 250%, 100% 100%;
+		background-size: 250% 250%, 100% 100%;
+
+		-webkit-transition: background-position 0s ease;
+		-moz-transition: background-position 0s ease;
+		-o-transition: background-position 0s ease;
+		transition: background-position 0s ease;
+	}
+
+	.banner-HeaderHalloween.shine-banner:hover {
+		background-position: 0 0, 0 0;
+
+		-webkit-transition-duration: 0.5s;
+		-moz-transition-duration: 0.5s;
+		transition-duration: 0.5s;
+	}
+	.HeaderHalloween-time-line-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 2rem 0;
+
+		@media screen and (max-width: 1200px) {
+			padding: 2.4rem 0;
+		}
+		.Halloween-button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 10px auto;
+			background-color: #f68f3e;
+			color: white;
+			font-size: 18px;
+			font-weight: 500;
+			padding: 12px 24px;
+			border: none;
+			border-radius: 8px;
+			cursor: pointer;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+			transition: all 0.3s ease;
+			position: relative;
+		}
+
+		.Halloween-button:hover {
+			background-color: #f68f3e;
+			box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+			transform: scale(1.05);
+		}
+
+		.Halloween-button:before {
+			content: '';
+			position: absolute;
+			left: -30px;
+			top: 50%;
+			transform: translateY(-50%);
+			font-size: 24px;
+		}
+
+		.Halloween-button:after {
+			content: '';
+			position: absolute;
+			right: -30px;
+			top: 50%;
+			transform: translateY(-50%);
+			font-size: 24px;
+		}
+
+		.Halloween-button:active {
+			background-color: #c24500;
+			transform: scale(0.98);
+		}
+	}
+
+	.HeaderHalloween-time-line-card {
+		// width: 18rem;
+		// height: 9rem;
+		// display: flex;
+		background-color: #fde68a;
+		border-radius: 5px;
+		// flex-direction: column;
+		// align-items: center;
+		// justify-content: center;
+		// background-image: url("../../../../public/sale-12/viber_image_2024-11-27_13-16-38-251.png");
+		// background-size: cover;
+		// background-repeat: no-repeat;
+		// position: relative;
+		// z-index: 10;
+
+		@media screen and (max-width: 1200px) {
+			width: 15rem;
+			height: 9rem;
+		}
+		@media screen and (max-width: 768px) {
+			width: 13rem;
+			height: 7rem;
+		}
+		@media screen and (max-width: 576px) {
+			width: 10rem;
+			height: 5rem;
+		}
+	}
+
+	.HeaderHalloween-time-line-card-container {
+	}
+
+	.content-card {
+		padding: 5px;
+		display: block;
+		margin-bottom: 0px;
+		margin-left: 0px;
+
+		@media screen and (max-width: 576px) {
+			margin-left: 0;
+		}
+	}
+
+	.HeaderHalloween-time-line-count {
+		font-size: 2rem; // text-6xl
+		font-weight: bold;
+		color: #2425ff; // amber-100
+		text-align: center;
+		@media screen and (max-width: 1200px) {
+			font-size: 2rem;
+		}
+		@media screen and (max-width: 768px) {
+			font-size: 1.6rem;
+		}
+		@media screen and (max-width: 576px) {
+			margin-top: 0rem;
+		}
+	}
+	.HeaderHalloween-time-line-count-key {
+		font-size: 2rem; // text-6xl
+		font-weight: bold;
+		color: #fff; // amber-100
+		text-align: center;
+		@media screen and (max-width: 1200px) {
+			font-size: 2rem;
+		}
+		@media screen and (max-width: 768px) {
+			font-size: 1.6rem;
+		}
+		@media screen and (max-width: 576px) {
+			margin-top: 0rem;
+		}
+	}
+	.HeaderHalloween-time-line-card-key {
+		display: flex;
+		gap: 2px;
+
+		@media (max-width: 768px) {
+			gap: 5px;
+		}
+	}
+	.HeaderHalloween-time-line-subtext,
+	.HeaderHalloween-time-line-subtext-small {
+		margin-top: 0.5rem; // mt-2
+		text-align: center;
+		font-weight: 500;
+		font-size: 18px; // text-xs
+		color: #fde68a; // amber-200
+		@media screen and (max-width: 1200px) {
+			font-size: 1.4rem;
+		}
+		@media screen and (max-width: 768px) {
+			font-size: 1.2rem;
+		}
+		@media screen and (max-width: 576px) {
+			font-size: 1rem;
+		}
+	}
+
+	.HeaderHalloween-time-line-buttons {
+		margin-top: 2rem; // mt-8
+		display: flex;
+		gap: 1rem; // space-x-4
+	}
+
+	.HeaderHalloween-time-line-btn {
+		background-color: #fde68a; // bg-amber-200
+		color: #78350f; // text-amber-900
+		border-color: #78350f; // Matches the amber-900 border
+		&:hover {
+			background-color: #fcd34d; // hover:bg-amber-300
+		}
+	}
+	.HeaderHalloween-promotion-list {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 2.4rem;
+		align-items: center;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+
+		@media screen and (max-width: 1200px) {
+			grid-template-columns: repeat(4, 1fr);
+			width: 100%;
+			gap: 1.2rem;
+			margin-bottom: 0;
+		}
+	}
+	.HeaderHalloween-promotion-img {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		object-fit: contain;
+		width: 100%;
+	}
+	.HeaderHalloween-promotion-header {
+		text-align: center;
+		font-size: 3.2rem;
+		color: #ffff00;
+		text-transform: uppercase;
+		font-weight: 600;
+		@media screen and (max-width: 1200px) {
+			font-size: 2rem;
+		}
+		@media screen and (max-width: 768px) {
+			font-size: 1.5rem;
+		}
+	}
+	.HeaderHalloween-promotion-list-privilege {
+		display: flex;
+		padding: 1.2rem 0;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		justify-content: center;
+		gap: 0px;
+		position: relative;
+		z-index: 1;
+
+		@media screen and (max-width: 1200px) {
+			gap: 0rem;
+			grid-template-columns: repeat(4, 1fr);
+			display: grid;
+		}
+		img {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			object-fit: contain;
+			width: 100%;
+		}
+	}
+	.privilege-img {
+		overflow: hidden;
+		display: inline-block;
+		position: relative;
+
+		img {
+			transition: transform 0.5s ease-in-out;
+		}
+
+		&:hover img {
+			transform: scale(1.1);
+		}
+	}
+}
+.glitch-24-12 {
+	font-size: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	line-height: 1;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	text-decoration: none;
+	color: #fff;
+	&:before,
+	&:after {
+		display: block;
+		content: '8 đặc quyền mua hàng tại Bạch Long Mobile';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		opacity: 0.8;
+	}
+	@media screen and (max-width: 768px) {
+		font-size: 20px;
+	}
+}
+@keyframes glitch-small {
+	0% {
+		transform: translate(0);
+	}
+	33% {
+		transform: translate(1px, 1px);
+	}
+	66% {
+		transform: translate(-1px, -1px);
+	}
+	to {
+		transform: translate(0);
+	}
+}
+@keyframes glitch-medium {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translate(-1px, 1px);
+	}
+	40% {
+		transform: translate(-1px, -1px);
+	}
+	60% {
+		transform: translate(1px, 1px);
+	}
+	80% {
+		transform: translate(1px, -1px);
+	}
+	to {
+		transform: translate(0);
+	}
+}
+@keyframes glitch-left {
+	0% {
+		transform: translate(0);
+	}
+	33% {
+		transform: translate(-1px, 1px);
+	}
+	66% {
+		transform: translate(1px, -1px);
+	}
+	to {
+		transform: translate(0);
+	}
+}
+@keyframes glitch-left-2 {
+	0% {
+		transform: translate(0);
+	}
+	33% {
+		transform: translate(-1px, -1px);
+	}
+	66% {
+		transform: translate(1px, 1px);
+	}
+	to {
+		transform: translate(0);
+	}
+}
+.title-deal-24-12,
+.countdown-deal-24-12 {
+	font-family: var(--font-sans-serif);
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	line-height: 1;
+	margin: 0 0 1.5em;
+	padding: 0;
+	font-size: 1.8rem;
+	position: relative;
+	color: #fff;
+}
+
+.title-deal-24-12 {
+	font-size: 1.5rem;
+	&:before,
+	&:after {
+		content: ' ***** ';
+		font-size: 0.75rem;
+		letter-spacing: 0.25em;
+		color: #92d436;
+	}
+	@media screen and (max-width: 768px) {
+		font-size: 1rem;
+	}
+}
+
+.countdown-deal-24-12 {
+	display: flex;
+	gap: 0.35em;
+	justify-content: space-between;
+	max-width: 330px;
+	margin: 0 auto;
+}
+.newYear-deal-24-12 {
+	font-family: var(--font-script);
+	font-size: calc(5rem);
+	line-height: 1;
+	letter-spacing: 0.02em;
+	padding: 10px 0px;
+	font-weight: bold;
+	background: repeating-linear-gradient(45deg, #d80e13, #d80e13 10px, #ffffff 10px, #ffffff 20px);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+	text-shadow: 0 3px 6px rgba(0, 0, 0, 0.24), 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+		0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+		0 100px 80px rgba(0, 0, 0, 0.12);
+	@media screen and (max-width: 1200px) {
+		font-size: calc(5rem);
+	}
+	@media (max-width: 768px) {
+		font-size: calc(3rem);
+	}
+}
+.font-sans-serif-deal-24-12 {
+	font-family: var(--font-sans-serif);
+	font-weight: 200;
+	font-size: 0.75em;
+}
+
+.font-script-deal-24-12 {
+	font-family: var(--font-script);
+}
+
+.header-deal-24-12 {
+	position: relative;
+	text-align: center;
+	margin-bottom: 20px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	@media screen and (min-width: 1024px) {
+		display: none;
+	}
+}

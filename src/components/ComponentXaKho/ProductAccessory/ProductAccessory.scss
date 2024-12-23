@@ -1,0 +1,143 @@
+.btn-tab-warehouse-discharge {
+  background: white;
+  width: max-content;
+  height: max-content;
+  padding: 15px 15px;
+  border-radius: 10px;
+  white-space: nowrap;
+  color: #000;
+  font-weight: 600;
+  @media (max-width: 767px) {
+    margin: auto;
+    padding: 10px 10px;
+  }
+}
+.btn-tab-warehouse-discharge_active {
+  background: red;
+  color: #fff;
+}
+.btn-see-more {
+  border: 1px solid red;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 10px 20px;
+  display: block;
+  margin: 20px auto;
+  &:hover {
+    border: 1px solid rgb(255, 82, 82);
+    cursor: pointer;
+  }
+}
+.tab-btn-product-accessory {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow-x: auto; // Thêm thuộc tính này để cho phép cuộn ngang
+  overflow-y: hidden; // Ẩn thanh cuộn dọc
+  ::-webkit-scrollbar {
+    display: none; // Ẩn thanh cuộn cho trình duyệt WebKit
+  }
+  button {
+    flex-wrap: nowrap;
+  }
+  @media (max-width: 767px) {
+    justify-content: unset;
+  }
+}
+.warehouse-discharge-container-product-table {
+  overflow-x: auto; // Enable horizontal scrolling
+  -webkit-overflow-scrolling: touch; // Smooth scrolling for iOS
+  @media (max-width: 767px) {
+    overflow-x: unset;
+  }
+  .product-table {
+    display: inline-table; // Allow the table to take only necessary width
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .product-table th,
+  .product-table td {
+    border: 1px solid #ddd; // Border for each cell
+    padding: 12px 15px;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  .product-table th {
+    background-color: #f2f2f2; // Light background for header row
+    font-weight: bold;
+  }
+
+  .product-table tr:nth-child(even) {
+    background-color: #f9f9f9; // Alternating row colors for readability
+  }
+
+  .product-table tr:hover {
+    background-color: #f1f1f1; // Highlight row on hover
+    cursor: pointer;
+  }
+
+  // Border styling for entire table
+  .product-table {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .btn-handle-ok {
+    margin-top: 0px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff1212;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .btn-handle-ok :hover {
+    background-color: #ff5858;
+  }
+  .btn-see-more {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff1212;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .btn-see-more:hover {
+    background-color: #ff5858;
+  }
+  .table-pc {
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+  .table-mb {
+    display: none;
+    .product-table th,
+    .product-table td {
+      border: 1px solid #ddd; // Border for each cell
+      padding: 12px 15px;
+      text-align: left;
+      white-space: unset;
+    }
+    @media (max-width: 767px) {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,434 @@
+.font-sans-serif-deal-24-12 {
+  font-family: var(--font-sans-serif);
+  font-weight: 200;
+  font-size: 0.75em;
+}
+
+.font-script-deal-24-12 {
+  font-family: var(--font-script);
+}
+
+.header-deal-24-12 {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.snowman-deal-24-12 {
+  position: absolute; // or relative, depending on your layout
+  bottom: 10px; // Align it with the bottom of the wrapper
+  left: 10%; // Center it horizontally
+  transform: translateX(-50%); // Adjust for centering
+  width: 200px; // Adjust size as needed
+  height: auto; // Maintain aspect ratio
+  z-index: 1;
+  @media screen and (max-width: 768px) {
+    left: 30%;
+  }
+}
+.newYear-deal-24-12 {
+  font-family: var(--font-script);
+  font-size: calc(5rem);
+  line-height: 1;
+  letter-spacing: 0.02em;
+  padding: 10px 0px;
+  font-weight: bold;
+  background: repeating-linear-gradient(
+    45deg,
+    #d80e13,
+    #d80e13 10px,
+    #ffffff 10px,
+    #ffffff 20px
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.24), 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  @media screen and (max-width: 1200px) {
+    font-size: calc(5rem);
+  }
+  @media (max-width: 768px) {
+    font-size: calc(3rem);
+  }
+}
+
+.title-deal-24-12,
+.countdown-deal-24-12 {
+  font-family: var(--font-sans-serif);
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  margin: 0 0 1.5em;
+  padding: 0;
+  font-size: 1.8rem;
+  position: relative;
+  color: #fff;
+}
+
+.title-deal-24-12 {
+  font-size: 1.5rem;
+  &:before,
+  &:after {
+    content: " ***** ";
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    color: #bad594;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
+.countdown-deal-24-12 {
+  display: flex;
+  gap: 0.35em;
+  justify-content: space-between;
+  max-width: 330px;
+  margin: 0 auto;
+}
+
+// START snowfall
+$numberOfSnowflake: 250; // update together with js
+$numberOfSnowflakeMd: 50; // update together with js
+$numberOfSnowflakeLg: 50; // update together with js
+
+.snowflake-deal-24-12 {
+  position: absolute;
+  top: -2vh;
+  font-size: 2rem;
+  animation: fall linear infinite;
+  opacity: 0.8;
+}
+
+.snowflake-deal-24-12 {
+  position: absolute;
+  z-index: 5;
+  font-size: 10px;
+  width: 2px;
+  height: 2px;
+  border-radius: 100%;
+  background-color: #fff;
+  &._md {
+    width: 3px;
+    height: 3px;
+  }
+  &._lg {
+    width: 5px;
+    height: 5px;
+  }
+  @for $i from 1 through $numberOfSnowflake {
+    $fall-duration: random_range(10, 30);
+    &._sm-#{$i} {
+      left: random(120) - 20 + vw;
+      filter: blur((random(2)-1) + px);
+      animation: ((random(100) + 50)/5) +
+        s
+        fall
+        (random(100) / -5) +
+        s
+        infinite;
+    }
+  }
+  @for $i from 1 through $numberOfSnowflakeMd {
+    &._md-#{$i} {
+      left: random(120) - 20 + vw;
+      filter: blur((random(2)-1) + px);
+      animation: ((random(100) + 50)/5) +
+        s
+        fall
+        (random(100) / -5) +
+        s
+        infinite;
+    }
+  }
+  @for $i from 1 through $numberOfSnowflakeLg {
+    &._lg-#{$i} {
+      left: random(120) - 20 + vw;
+      animation: ((random(100) + 50)/5) +
+        s
+        fall
+        (random(100) / -5) +
+        s
+        infinite;
+    }
+  }
+}
+
+@keyframes flickr {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
+@keyframes fall {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(20vw, 110vh);
+  }
+}
+
+.ground-deal-24-12 {
+  border-top-right-radius: 71vw 40px;
+
+  position: absolute;
+  width: 73vw;
+  height: 61px;
+
+  left: 0;
+  bottom: 0;
+
+  background: white;
+
+  &:before {
+    border-radius: 50%;
+
+    content: " ";
+    position: absolute;
+
+    width: 71vw;
+    height: 100px;
+
+    top: 10px;
+    right: -33vw;
+
+    background: white;
+  }
+
+  &:after {
+    border-radius: 50%;
+
+    content: " ";
+    position: absolute;
+
+    width: 38vw;
+    height: 70px;
+
+    top: 5px;
+    right: -41vw;
+
+    background: white;
+  }
+}
+// END snowfall
+
+// START candy
+.candy-deal-24-12 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #add8e6;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: explode 1.25s ease-out forwards;
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(0.5) translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.2) translate(var(--x), var(--y));
+    opacity: 0;
+  }
+}
+// END candy
+
+// START mailbox
+.mailbox-deal-24-12 {
+  position: absolute;
+  z-index: 1;
+  right: 5vw;
+  bottom: 45px;
+  width: 120px;
+  height: 170px;
+  cursor: pointer;
+  .basis-deal-24-12 {
+    position: absolute;
+    width: 16px;
+    height: 65px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #222;
+  }
+  .box-deal-24-12 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    background: #d71536;
+    border-radius: 0 0 7px 7px;
+    border: 5px solid #b90b21;
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: calc(100% + 5px);
+      left: -15px;
+      right: -15px;
+      height: 20px;
+      border-radius: 7px;
+      background-color: #b90b21;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      right: -5px;
+      height: 5px;
+      background-color: #600307;
+    }
+  }
+  .box-title-deal-24-12 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5px;
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 1em;
+  }
+  .letters-deal-24-12 {
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 85px;
+    top: -50px;
+    left: 0;
+    right: 0;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 15px;
+      width: 75px;
+      background: #600307;
+      border-radius: 5px;
+    }
+  }
+  .letter-deal-24-12 {
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    border-radius: 2px;
+    .letter-image {
+      position: absolute;
+    }
+  }
+  .letter-first-deal-24-12 {
+    width: 70px;
+    height: 42px;
+    top: 50px;
+    left: 10px;
+    transform: rotate(80deg);
+    .letter-image-deal-24-12 {
+      top: -3px;
+      left: -4px;
+      width: calc(100% + 10px);
+    }
+  }
+  .letter-second-deal-24-12 {
+    width: 70px;
+    height: 45px;
+    top: 65px;
+    right: 12px;
+    transform: rotate(100deg);
+    .letter-image-deal-24-12 {
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+}
+.mailbox-shadow-deal-24-12 {
+  z-index: 10;
+  position: absolute;
+  right: 5vw;
+  bottom: 85px;
+  width: 120px;
+  height: 150px;
+  cursor: pointer;
+  opacity: 0;
+}
+// END mailbox
+
+// START mail
+.mail-deal-24-12 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 300px;
+  padding: 15px;
+  line-height: 1.2;
+  font-family: var(--font-sans-serif);
+  font-weight: 200;
+  border-width: 0;
+  background: repeating-linear-gradient(
+    -45deg,
+    #f6ebd8,
+    #f6ebd8 20px,
+    #41945f 20px,
+    #41945f 40px,
+    #f6ebd8 40px,
+    #f6ebd8 60px,
+    #c44141 60px,
+    #c44141 80px
+  );
+  .mail-inner-deal-24-12 {
+    padding: 15px;
+    background: #f6ebd8;
+  }
+  p + p {
+    margin-top: 0.75em;
+  }
+  .font-script-deal-24-12 {
+    font-size: 1.25em;
+  }
+  .mail-title-deal-24-12 {
+    font-weight: 400;
+  }
+  .mail-close-deal-24-12 {
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    border: 0;
+    background: transparent;
+    transition: transform 0.3s;
+    &:hover {
+      transform: rotate(180deg);
+    }
+  }
+}
+// END mail
+
+.overlay-deal-24-12 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000; // Ensure it is above other elements
+}
+
+.no-scroll-deal-24-12 {
+  overflow: hidden;
+}

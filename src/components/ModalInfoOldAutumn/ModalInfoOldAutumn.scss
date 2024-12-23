@@ -1,0 +1,22 @@
+.ModalInfoOldAutumn-description-strong {
+	font-weight: bold;
+	color: #ff3f3f;
+}
+.ModalInfoOldAutumn-title {
+	padding: 0px 10px 0 10px;
+	font-size: 18px;
+	font-weight: 600;
+}
+.ModalInfoOldAutumn-button {
+	padding: 6px 12px;
+	color: #fff;
+	background-color: red;
+	border-radius: 5px;
+	font-size: 16px;
+	margin: 0 auto;
+	display: block;
+	font-weight: 600;
+	&:hover {
+		background-color: #ff7a7a;
+	}
+}

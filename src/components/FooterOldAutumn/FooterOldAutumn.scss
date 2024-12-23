@@ -1,0 +1,172 @@
+.FooterOldAutumn {
+	background-color: #ffffff; // Light yellow background
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+
+	&-mainSection {
+		padding: 0;
+		margin-bottom: 20px;
+		&-info {
+			display: flex;
+			margin-bottom: 10px;
+			@media (max-width: 767px) {
+				display: block !important;
+			}
+		}
+	}
+
+	&-heading {
+		font-size: 18px;
+		font-weight: bold;
+		padding: 5px;
+	}
+
+	&-ctaButton {
+		background-color: #ffffff;
+		border: 1px solid red;
+		padding: 8px 16px;
+		border-radius: 4px;
+		color: red;
+		cursor: pointer;
+		@media (max-width: 767px) {
+			margin: 0 auto;
+			display: flex;
+			justify-content: center;
+		}
+		&:hover {
+			background-color: red;
+			color: white;
+		}
+	}
+
+	&-description {
+		margin-bottom: 10px;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1.5;
+		@media (max-width: 767px) {
+			font-size: 14px;
+		}
+		&-strong {
+			font-weight: 700;
+		}
+	}
+
+	&-benefits {
+		list-style: none;
+		padding: 0;
+		font-size: 14px;
+		margin-bottom: 16px;
+		@media (max-width: 767px) {
+			font-size: 12px;
+		}
+	}
+
+	&-supportText {
+		font-weight: bold;
+		padding: 10px 0;
+		font-size: 22px;
+		line-height: 1.5;
+		@media (max-width: 767px) {
+			font-size: 18px;
+		}
+	}
+
+	&-readMoreButton {
+		background-color: #ffffff;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		border: none;
+		padding: 10px 16px;
+		border-radius: 4px;
+		cursor: pointer;
+		font-size: 14px;
+		border: 1px solid rgb(0, 68, 255);
+
+		&:hover {
+			background-color: #ddd;
+		}
+	}
+
+	&-extraSection {
+		display: flex;
+		width: 100%;
+		gap: 20px;
+		justify-content: center;
+		margin: 20px auto;
+		@media (max-width: 767px) {
+			display: block;
+		}
+
+		&-videoSection {
+		}
+
+		&-contactSection {
+			flex: 1;
+			background-color: #ffeaea;
+			padding: 10px;
+			border-radius: 4px;
+
+			p {
+				font-size: 16px;
+				color: red;
+				font-weight: bold;
+			}
+
+			ul {
+				margin-top: 10px;
+				line-height: 1.5;
+				padding: 20px;
+				background-color: #ecfdf5;
+				border: 1px solid #10b981;
+				border-radius: 10px;
+			}
+		}
+	}
+}
+.FooterOldAutumn-contactSection-card {
+	background: linear-gradient(290deg, #ff661d -9.95%, #ec1e27 108.71%);
+	border-radius: 0.8rem;
+	overflow: hidden;
+	display: flex;
+	padding: 1.6rem 1.2rem;
+	span {
+		color: #000;
+		font-size: 2.4rem;
+		font-weight: 700;
+		line-height: 140%;
+		@media (max-width: 767px) {
+			font-size: 1.8rem;
+		}
+	}
+	.FooterOldAutumn-hotline {
+		color: #fad200;
+	}
+	.FooterOldAutumn-contactSection-card-images {
+		width: 30px;
+		height: 30px;
+		@media (max-width: 767px) {
+			width: 20px;
+			height: 20px;
+		}
+	}
+}
+.FooterOldAutumn-extraSection-videoSection-item {
+	width: 100%;
+	height: 100%;
+	@media (max-width: 767px) {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		margin: 10px auto !important;
+	}
+}
+.FooterOldAutumn-hotline-br {
+	display: block;
+	@media (max-width: 767px) {
+		display: none;
+	}
+}
